@@ -1,0 +1,76 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0300 
+header_name {.h} 
+code_name {.cpp}
+class GuiView {open
+} {
+  Function {GuiView()} {open
+  } {
+    Fl_Window mainWindow {
+      label {Visualization Tool} open
+      xywh {509 200 930 645} type Double box UP_BOX labelsize 11 hide
+      code0 {\#include <FL/gl.h>}
+      code1 {Fl::scheme("plastic");}
+    } {
+      Fl_Menu_Bar menu {open
+        xywh {1 1 924 23} box ENGRAVED_BOX labelsize 11
+        code0 {\#include <FL/Fl_File_Chooser.H>}
+      } {
+        Submenu file {
+          label File open
+          xywh {0 0 70 21}
+        } {
+          MenuItem open {
+            label Open
+            callback scb_open
+            xywh {0 0 36 21}
+          }
+          MenuItem quit {
+            label Quit
+            callback scb_quit
+            xywh {0 0 36 21}
+          }
+        }
+        MenuItem {} {
+          label Help
+          xywh {0 0 36 21}
+        }
+      }
+      Fl_Box curve {
+        label Curve selected
+        xywh {160 27 615 615} box ENGRAVED_BOX labeltype NO_LABEL labelsize 16 labelcolor 2 align 33
+        code0 {\#include "FltkForm.h"}
+        class FltkForm
+      }
+    }
+  }
+  Function {show()} {} {
+    code {mainWindow->show();} {}
+  }
+  Function {scb_open(Fl_Widget *o, void *v)} {open return_type {static void}
+  } {
+    code {((GuiView *)v)->cb_menu_open();} {}
+  }
+  Function {scb_quit(Fl_Widget *o, void *v)} {return_type {static void}
+  } {
+    code {exit(0);} {}
+  }
+  Function {cb_menu_open()} {open return_type void
+  } {
+    code {Fl_File_Chooser chooser("../data/", "(*.{las,ply,txt})", Fl_File_Chooser::SINGLE, "Title Of Chooser"); 
+chooser.show();
+while(chooser.shown()) 
+ { Fl::wait(); }
+
+std::string FileName ;
+extern GuiView *fv;
+FileName = (char *) chooser.value();
+extern int mode;
+mode = 1;
+fv->curve->setFilePath(FileName);
+//extern void Fileread(std::string FileName);
+//Fileread( FileName);
+fv->curve->process();
+fv->curve->redraw();} {}
+  }
+} 
