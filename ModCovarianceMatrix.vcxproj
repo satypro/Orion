@@ -171,15 +171,15 @@
     </QtMoc>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Classifier.cpp" />
-    <ClCompile Include="ClassifiersFactory.cpp" />
-    <ClCompile Include="Configuration.cpp" />
-    <ClCompile Include="CovarianceMatrixClassifier.cpp" />
-    <ClCompile Include="CoVarianceOptimal.cpp" />
-    <ClCompile Include="DiffusedNormalVotingClassifier.cpp" />
-    <ClCompile Include="SearchNeighbour.cpp" />
-    <ClCompile Include="SearchNeighbourFactory.cpp" />
-    <ClCompile Include="SearchNeighbourOctTree.cpp" />
+    <ClCompile Include="src\Classification\Classifier.cpp" />
+    <ClCompile Include="src\Classification\ClassifiersFactory.cpp" />
+    <ClCompile Include="src\Classification\Configuration.cpp" />
+    <ClCompile Include="src\Classification\CovarianceMatrixClassifier.cpp" />
+    <ClCompile Include="src\Classification\CoVarianceOptimal.cpp" />
+    <ClCompile Include="src\Classification\DiffusedNormalVotingClassifier.cpp" />
+    <ClCompile Include="src\Classification\SearchNeighbour.cpp" />
+    <ClCompile Include="src\Classification\SearchNeighbourFactory.cpp" />
+    <ClCompile Include="src\Classification\SearchNeighbourOctTree.cpp" />
     <ClCompile Include="src\Classification\Color.cpp" />
     <ClCompile Include="src\Classification\DiffusedOptimal.cpp" />
     <ClCompile Include="src\Classification\Display.cpp" />
@@ -238,28 +238,28 @@
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;.\src;\usr\local\include;\usr\local\include\pcl-1.8;\usr\include\eigen3;\usr\include\vtk-5.10;\usr\include\jsoncpp;$(QTDIR)\include;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtCore;.\release;\include;$(QTDIR)\mkspecs\win32-msvc;.\src\Classification</IncludePath>
       <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</Define>
     </ClInclude>
-    <ClInclude Include="ProcessRequest.h" />
-    <ClInclude Include="resource.h" />
-    <ClInclude Include="SearchNeighbour.h">
+    <ClInclude Include="src\Classification\ProcessRequest.h" />
+    <ClInclude Include="src\Classification\resource.h" />
+    <ClInclude Include="src\Classification\SearchNeighbour.h">
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;.\src;\usr\local\include;\usr\local\include\pcl-1.8;\usr\include\eigen3;\usr\include\vtk-5.10;\usr\include\jsoncpp;$(QTDIR)\include;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtCore;.\debug;\include;$(QTDIR)\mkspecs\win32-msvc;.\src\Classification</IncludePath>
       <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</Define>
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;.\src;\usr\local\include;\usr\local\include\pcl-1.8;\usr\include\eigen3;\usr\include\vtk-5.10;\usr\include\jsoncpp;$(QTDIR)\include;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtCore;.\release;\include;$(QTDIR)\mkspecs\win32-msvc;.\src\Classification</IncludePath>
       <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</Define>
     </ClInclude>
-    <ClInclude Include="SearchNeighbourFactory.h">
+    <ClInclude Include="src\Classification\SearchNeighbourFactory.h">
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;.\src;\usr\local\include;\usr\local\include\pcl-1.8;\usr\include\eigen3;\usr\include\vtk-5.10;\usr\include\jsoncpp;$(QTDIR)\include;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtCore;.\debug;\include;$(QTDIR)\mkspecs\win32-msvc;.\src\Classification</IncludePath>
       <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</Define>
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;.\src;\usr\local\include;\usr\local\include\pcl-1.8;\usr\include\eigen3;\usr\include\vtk-5.10;\usr\include\jsoncpp;$(QTDIR)\include;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtCore;.\release;\include;$(QTDIR)\mkspecs\win32-msvc;.\src\Classification</IncludePath>
       <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</Define>
     </ClInclude>
-    <ClInclude Include="SearchNeighbourOctTree.h">
+    <ClInclude Include="src\Classification\SearchNeighbourOctTree.h">
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;.\src;\usr\local\include;\usr\local\include\pcl-1.8;\usr\include\eigen3;\usr\include\vtk-5.10;\usr\include\jsoncpp;$(QTDIR)\include;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtCore;.\debug;\include;$(QTDIR)\mkspecs\win32-msvc;.\src\Classification</IncludePath>
       <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</Define>
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;.\src;\usr\local\include;\usr\local\include\pcl-1.8;\usr\include\eigen3;\usr\include\vtk-5.10;\usr\include\jsoncpp;$(QTDIR)\include;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtCore;.\release;\include;$(QTDIR)\mkspecs\win32-msvc;.\src\Classification</IncludePath>
       <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</Define>
     </ClInclude>
-    <ClInclude Include="SearchStructure.h" />
-    <ClInclude Include="SearchType.h" />
+    <ClInclude Include="src\Classification\SearchStructure.h" />
+    <ClInclude Include="src\Classification\SearchType.h" />
     <ClInclude Include="src\Classification\Color.h" />
     <ClInclude Include="src\Classification\DiffusedOptimal.h" />
     <ClInclude Include="src\Classification\Display.h" />
